@@ -1,0 +1,216 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="gree.css">
+</head>
+
+<body>
+    <div class="maincontent">
+        <header>
+            <img src="./download.jpeg" alt="Saylani Image">
+            <div>
+                <h1><u>STUDENT REGISTERATION FORM</u></h1>
+            </div>
+
+        </header>
+        <section>
+            <div class="myInfo">
+                <h3>Name: Syed Muhemin Ali</h3>
+                <h3>Email: rzaid3616@gmail.com</h3>
+                <h3>Roll Number # WM11338</h3>
+            </div>
+            <div class="mainSection">
+
+                <form action="./Submit.html">
+                    <table>
+                        <!-- <div class="form-control"> -->
+                        <tr>
+                            <td><label for="First name">First Name</label></td>
+                            <td><input type="text" placeholder="First Name" pattern="[a-zA-Z]*"
+                                    oninvalid="setCustomValidity('Please enter on alphabets only. ')" maxlength="30"
+                                    size="30">
+                                <small>(Max 30 characters a-z and A-Z)</small></td>
+                        </tr>
+                        <!-- </div> -->
+                        <!-- <div class="form-control"> -->
+                        <tr>
+                            <td><label for="Last Name">Last Name</label></td>
+                            <td><input type="text" placeholder="Last Name" pattern="[a-zA-Z]+"
+                                    oninvalid="setCustomValidity('Please enter on alphabets only. ')" maxlength="30"
+                                    size="30">
+                                <small>(Max 30 characters a-z and A-Z)</small></td>
+                        </tr>
+                        <!-- </div> -->
+                        <!-- <div class="form-control"> -->
+                        <tr>
+                            <td><label for="Date Of Birth">Date Of Birth</label></td>
+                            <td> <select name="" id="">
+                                    <option value="">day</option>
+                                    <option value="">Mon</option>
+                                    <option value="">Tue</option>
+                                    <option value="">Wed</option>
+                                    <option value="">Thu</option>
+                                    <option value="">Fri</option>
+                                    <option value="">Sat</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">Month</option>
+                                    <option value="">jan</option>
+                                    <option value="">fab</option>
+                                    <option value="">mar</option>
+                                    <option value="">apr</option>
+                                    <option value="">may</option>
+                                    <option value="">jun</option>
+                                    <option value="">july</option>
+                                    <option value="">aug</option>
+                                    <option value="">sep</option>
+                                    <option value="">oct</option>
+                                    <option value="">nov</option>
+                                    <option value="">dec</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">Year</option>
+                                    <option value="">2020</option>
+                                    <option value="">2019</option>
+                                    <option value="">2017</option>
+                                    <option value="">2016</option>
+                                    <option value="">2015</option>
+                                    <option value="">2014</option>
+                                    <option value="">2013</option>
+                                    <option value="">2012</option>
+                                    <option value="">2011</option>
+                                    <option value="">2010</option>
+                                    <option value="">2009</option>
+                                    <option value="">2008</option>
+                                    <option value="">2007</option>
+                                    <option value="">2006</option>
+                                    <option value="">2005</option>
+                                    <option value="">2004</option>
+                                    <option value="">2003</option>
+                                    <option value="">2002</option>
+                                    <option value="">2001</option>
+                                    <option value="">2000</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Email">Email ID</label></td>
+                            <td><input type="Email" placeholder="Email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="MOBILE NUMBER">MOBILE NUMBER</label></td>
+                            <td><input type="number" placeholder="MOBILE NUMBER"
+                                    onKeyPress="if(this.value.length==10) return false;">
+                                <small>(10 DIGIT NUMBER)</small></td>
+                        </tr>
+
+                        <tr>
+                            <td>GENDER</td>
+                            <td><input type="radio" name="gender" id="male"><label for="male">Male</label> <input type="radio" name="gender" id="female"><label for="female">Female</label></td>
+                        </tr> 
+
+                        <tr>
+                            <td><label for="ADRESS">ADRESS</label></td>
+                            <td><textarea name="address" id="address" cols="30" rows="4" placeholder="Enter address"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="CITY">CITY</label></td>
+                            <td><input type="text" placeholder="ENTER CITY NAME" maxlength="30" size="30">
+                                <small>(Max 30 characters a-z and A-Z)</small></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="PIN CODE">PIN CODE</label></td>
+                            <td><input type="number" placeholder="ENTER PIN CODE"
+                                    onKeyPress="if(this.value.length==6) return false;">
+                                <small>(6 DIGIT NUMBER)</small></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="STAT">STAT</label></td>
+                            <td><input type="text" placeholder="ENTER STAT" maxlength="30" size="30">
+                                <small>Max 30 characters a-z and A-Z</small></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="COUNTRY">COUNTRY</label></td>
+                            <td><input type="text" placeholder="ENTER COUNTRY"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="HOBBIES">HOBBIES</label></td>
+                            <td><label for="DRAWING">DRAWING</label><input type="checkbox">
+                                <label for="sINGING">SINGING</label><input type="checkbox">
+                                <label for="DANCING">DANCING</label><input type="checkbox">
+                                <label for="SWIMMING">SWIMMING</label><input type="checkbox"><br>
+                                <label for="OTHER">OTHER</label><input type="checkbox"><input type="text"></td>
+                        </tr>
+                        <table class="qaulTable">
+                            <tr align="center">
+                                <td rowspan="5" style="left:0px; vertical-align:top;"><label>QUALIFICATION</label>
+
+                                <td align="left">S.No </td>
+                                <td align="left">Examination</td>
+                                <td>Board</td>
+                                <td>Percentage</td>
+                                <td>Year of Passing</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Class X</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>class XII</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Graduation</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Masters</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3>COURSES</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="APPLIED FOR">APPLIED FOR</label></td>
+                                <td><label for="DRAWING">BCA</label><input type="radio" name="drawing" id="drawing">
+                                    <label for="SINGING">B.Com</label><input type="radio" name="singing" id="singing">
+                                    <label for="DANCING">B.Sc</label><input type="radio" name="dancing" id="dancing">
+                                    <label for="SWIMMING">B.A</label><input type="radio" name="swiming" id="swiming">
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="form-Btns">
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                      
+                </form>
+            </div>
+        </section>
